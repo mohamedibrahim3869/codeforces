@@ -1,0 +1,26 @@
+#include <array>
+#include <cmath>
+#include <iostream>
+#include <string>
+using namespace std;
+
+void solve() {
+  int matrix[5][5];
+  for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < 5; j++) {
+      cin >> matrix[i][j];
+    }
+  }
+  for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < 5; j++) {
+      if (matrix[i][j] == 1) {
+        cout << abs(i - 2) + abs(j - 2) << endl;
+      }
+    }
+  }
+}
+
+int main() {
+  solve();
+  return 0;
+}
